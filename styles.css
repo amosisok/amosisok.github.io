@@ -1,6 +1,8 @@
 .copyright {
     left: 50%;
-    position: absolute;
+    position: fixed;
+    display: flex;
+    justify-content: center;
     transform: translateX(-50%);
     bottom: 0;
     color: #222;
@@ -30,6 +32,7 @@
   transform: translate(-50%, -50%);
   width: 70vmin;
 }
+
 .animated-title > div {
   height: 50%;
   overflow: hidden;
@@ -41,9 +44,9 @@
   padding: 2vmin 0;
   position: absolute;
 }
-.animated-title > div div span:first-child {
+/* .animated-title > div div span:first-child { */
   /* display: block; */
-}
+/* } */
 .animated-title > div.text-top {
   border-bottom: 1vmin solid #000;
   top: 0;
@@ -72,8 +75,27 @@
   font-size: 4vmin;
 }
 
-.animated-title > div.text-bottom div a {
+.animated-title > div.text-bottom div span {
     margin-right: 40px;
     text-decoration: none;
     color: #222;
+    cursor: pointer;
+}
+
+.section {
+  display: block;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  top: 100vh;
+}
+
+.section > h1 {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 4vmin;
+}
+
+.section > div {
+  width: 70vmin;
+  font-family: Roboto, Arial, sans-serif;
 }
