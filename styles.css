@@ -92,10 +92,11 @@
 
 .section > h1 {
   font-family: Roboto, Arial, sans-serif;
-  font-size: 4vmin;
+  font-size: 6vmin;
 }
 
 .section > div {
   width: 70vmin;
   font-family: Roboto, Arial, sans-serif;
+  font-size: 2vmin;
 }
