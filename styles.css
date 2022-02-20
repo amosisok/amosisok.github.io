@@ -87,7 +87,14 @@
   left: 50%;
   position: absolute;
   transform: translateX(-50%);
+}
+
+.about{
   top: 100vh;
+}
+
+.projects {
+  top: 150vh;
 }
 
 .section > h1 {
@@ -99,4 +106,9 @@
   width: 70vmin;
   font-family: Roboto, Arial, sans-serif;
   font-size: 2vmin;
+}
+
+.links {
+  text-decoration: none;
+  color: black;
 }
