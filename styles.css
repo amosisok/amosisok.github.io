@@ -112,3 +112,7 @@
   text-decoration: none;
   color: black;
 }
+
+.projectImage {
+  width: 100%;
+}
