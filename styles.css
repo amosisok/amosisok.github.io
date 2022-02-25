@@ -7,6 +7,7 @@
     bottom: 0;
     color: #222;
     font-family: Roboto, Arial, sans-serif;
+    margin-top: 1rem;
 }
 /* source: https://codepen.io/alvaromontoro/post/recreating-ipad-pro-commercial-animation-with-css */
 
@@ -83,11 +84,11 @@
 }
 
 .section {
-  display: block;
   left: 50%;
   position: absolute;
   transform: translateX(-50%);
-  width: 110vmin;
+  /* width: 110vmin; */
+  width: 70%;
 }
 
 .about{
@@ -95,7 +96,7 @@
 }
 
 .projects {
-  top: 150vh;
+  top: 180vh;
 }
 
 .section > h1 {
@@ -104,9 +105,10 @@
 }
 
 .section > div {
-  /* width: 70vmin; */
   font-family: Roboto, Arial, sans-serif;
   font-size: 2vmin;
+  display: inline-block;
+
 }
 
 .links {
@@ -116,7 +118,6 @@
 
 .projectImage {
   width: 100%;
-  /* max-height: 35rem; */
 }
 
 .project {
@@ -128,4 +129,15 @@
 
 .content {
   margin: 1rem;
+}
+
+.portrait {
+  max-width: 25rem;
+  max-height: 50rem;
+}
+
+.aboutContent {
+  display: inline-block;
+  width: 40rem;
+  margin-left: 5rem;
 }
