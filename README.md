@@ -1,1 +1,1 @@
-# amosisok.github.io
+My personal website @ amosko.me
