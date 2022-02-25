@@ -87,6 +87,7 @@
   left: 50%;
   position: absolute;
   transform: translateX(-50%);
+  width: 110vmin;
 }
 
 .about{
@@ -103,7 +104,7 @@
 }
 
 .section > div {
-  width: 70vmin;
+  /* width: 70vmin; */
   font-family: Roboto, Arial, sans-serif;
   font-size: 2vmin;
 }
@@ -115,4 +116,15 @@
 
 .projectImage {
   width: 100%;
+}
+
+.project {
+  width: 50vmin;
+  display: inline-block;
+  margin-right: 2rem;
+  border-style: groove;
+}
+
+.content {
+  margin: 1rem;
 }
