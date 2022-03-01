@@ -83,20 +83,75 @@
     cursor: pointer;
 }
 
-.section {
-  left: 50%;
-  position: absolute;
-  transform: translateX(-50%);
-  /* width: 110vmin; */
-  width: 70%;
-}
-
 .about{
   top: 100vh;
 }
 
 .projects {
   top: 180vh;
+}
+
+@media only screen and (min-width:1024px) {
+  .projects {
+    top: 180vh;
+  }
+
+  .section {
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 70%;
+
+  }
+
+  .portrait {
+    max-width: 25rem;
+    max-height: 50rem;
+  }
+
+  .aboutContent {
+    display: inline-block;
+    width: 40rem;
+    margin-left: 5rem;
+    line-height: 2rem;
+  }
+  .project {
+    width: 50vmin;
+    display: inline-block;
+    margin-right: 2rem;
+    border-style: groove;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .projects {
+    top: 180vh;
+  }
+
+  .section {
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+  }
+
+  .portrait {
+    max-width: 85vw;
+    max-height: 50vh;
+  }
+
+  .aboutContent {
+    display: inline-block;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+
+  .project {
+    width: 80vmin;
+    display: inline-block;
+    border-style: groove;
+    margin-bottom: 2rem;
+  }
 }
 
 .section > h1 {
@@ -120,24 +175,6 @@
   width: 100%;
 }
 
-.project {
-  width: 50vmin;
-  display: inline-block;
-  margin-right: 2rem;
-  border-style: groove;
-}
-
-.content {
+.projectContent {
   margin: 1rem;
-}
-
-.portrait {
-  max-width: 25rem;
-  max-height: 50rem;
-}
-
-.aboutContent {
-  display: inline-block;
-  width: 40rem;
-  margin-left: 5rem;
 }
