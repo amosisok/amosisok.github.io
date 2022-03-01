@@ -83,15 +83,11 @@
     cursor: pointer;
 }
 
-.about{
-  top: 100vh;
-}
-
-.projects {
-  top: 180vh;
-}
-
 @media only screen and (min-width:1024px) {
+  .about{
+    top: 100vh;
+  }
+
   .projects {
     top: 180vh;
   }
@@ -125,8 +121,13 @@
 
 
 @media only screen and (max-width: 600px) {
+  .about{
+    width: 80vmin;
+    top: 100vh;
+  }
+
   .projects {
-    top: 180vh;
+    top: 190vh;
   }
 
   .section {
@@ -136,8 +137,9 @@
   }
 
   .portrait {
-    max-width: 85vw;
-    max-height: 50vh;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
   }
 
   .aboutContent {
