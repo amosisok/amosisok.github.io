@@ -1,13 +1,5 @@
 .copyright {
-    left: 50%;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    transform: translateX(-50%);
-    bottom: 0;
-    color: #222;
     font-family: Roboto, Arial, sans-serif;
-    margin-top: 1rem;
 }
 /* source: https://codepen.io/alvaromontoro/post/recreating-ipad-pro-commercial-animation-with-css */
 
@@ -23,16 +15,6 @@
   0% { transform: translate3d(0, -100%, 0); }
   100% { transform: translate3d(0, 0, 0); }
 }
-.animated-title {
-  color: #222;
-  font-family: Roboto, Arial, sans-serif;
-  height: 90vmin;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 70vmin;
-}
 
 .animated-title > div {
   height: 50%;
@@ -45,9 +27,7 @@
   padding: 2vmin 0;
   position: absolute;
 }
-/* .animated-title > div div span:first-child { */
-  /* display: block; */
-/* } */
+
 .animated-title > div.text-top {
   border-bottom: 1vmin solid #000;
   top: 0;
@@ -84,24 +64,27 @@
 }
 
 @media only screen and (min-width:1024px) {
-  .about{
-    top: 100vh;
+
+  .animated-title {
+    color: #222;
+    font-family: Roboto, Arial, sans-serif;
+    height: 90vh;
+    transform: translateX(-50%);
+    width: 30rem;
   }
 
-  .projects {
-    top: 180vh;
+  .parent {
+    margin-left: 50%;
+    height: 100vh;
   }
 
   .section {
-    left: 50%;
-    position: absolute;
-    transform: translateX(-50%);
-    width: 80%;
+    margin-left: 10rem;
+    margin-top: 5rem;
   }
 
   .portrait {
-    max-width: 25rem;
-    max-height: 50rem;
+    max-width: 27rem;
   }
 
   .aboutContent {
@@ -112,9 +95,25 @@
   }
   .project {
     width: 50vmin;
-    display: inline-block;
+    display: flex;
     margin-right: 2rem;
     border-style: groove;
+    max-height: 60vh;
+  }
+
+  .row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* background-color: orange; */
+    gap: 10rem;
+  }
+
+  .footerRow {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
   }
 }
 
@@ -131,7 +130,6 @@
 
   .section {
     left: 50%;
-    position: absolute;
     transform: translateX(-50%);
   }
 
@@ -157,25 +155,51 @@
 
 .section > h1 {
   font-family: Roboto, Arial, sans-serif;
-  font-size: 6vmin;
+  font-size: 3vw;
 }
 
 .section > div {
   font-family: Roboto, Arial, sans-serif;
   font-size: 2vmin;
   display: inline-block;
+}
 
+.row > div > div{
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 2vmin;
+  display: inline-block;
 }
 
 .links {
+  font-family: Roboto, Arial, sans-serif;
   text-decoration: none;
   color: black;
 }
 
+.links:hover {
+  text-decoration: underline;
+}
+
 .projectImage {
   width: 100%;
+  max-height: 35vh;
 }
 
 .projectContent {
-  margin: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.footer {
+  margin-top: 3rem;
+}
+
+.footerLinks {
+  font-family: Roboto, Arial, sans-serif;
+  text-decoration: none;
+  color: #606060;
+}
+
+.footerLinks:hover {
+  text-decoration: underline;
 }
