@@ -58,6 +58,12 @@
     cursor: pointer;
 }
 
+.animated-title {
+  color: #222;
+  font-family: Roboto, Arial, sans-serif;
+  height: 90vh;
+  transform: translateX(-50%);
+}
 
 @media only screen and (min-width:1024px) {
 
@@ -74,22 +80,9 @@
       margin-top: 5rem;
     }
   }
-
+  
   .animated-title {
-    color: #222;
-    font-family: Roboto, Arial, sans-serif;
-    height: 90vh;
-    transform: translateX(-50%);
     width: 31rem;
-  }
-
-  .parent {
-    margin-left: 50%;
-    height: 100vh;
-  }
-
-  .portrait {
-    max-width: 28rem;
   }
 
   .aboutContent {
@@ -101,17 +94,10 @@
 
   .project {
     width: 50vmin;
-    display: flex;
     margin-right: 2rem;
-    border-style: groove;
     max-height: 60vh;
     box-shadow: 20px 20px rgba(0,0,0,.15);
     transition: all .4s ease;
-  }
-
-  .project:hover {
-    border-color: blue;
-    box-shadow: 0px 0px rgba(0,0,0,.15);
   }
 
   .row {
@@ -139,26 +125,14 @@
   }
 
   .portrait {
-    max-width: 21rem;
+    width: 21rem;
   }
 
   .animated-title {
-    color: #222;
-    font-family: Roboto, Arial, sans-serif;
-    height: 90vh;
-    transform: translateX(-50%);
     width: 15rem;
   }
 
-  .parent {
-    margin-left: 50%;
-    height: 100vh;
-  }
-
   .project {
-    display: flex;
-    justify-content: center;
-    border-style: groove;
     box-shadow: 10px 10px rgba(0,0,0,.15);
     transition: all .4s ease;
     margin: 1rem;
@@ -199,6 +173,29 @@
 
 .links:hover {
   text-decoration: underline;
+}
+
+.parent {
+  margin-left: 50%;
+  height: 100vh;
+}
+
+.portrait {
+  max-width: 28rem;
+}
+
+.project {
+  border-style: groove;
+  transition: all .4s ease;
+  display: flex;
+  justify-content: center;
+  border-style: groove;
+  box-shadow: 20px 20px rgba(0,0,0,.15);
+}
+
+.project:hover {
+  border-color: blue;
+  box-shadow: 0px 0px rgba(0,0,0,.15);
 }
 
 .projectImage {
