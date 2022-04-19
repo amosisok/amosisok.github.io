@@ -44,11 +44,11 @@
 }
 .animated-title > div.text-bottom div {
   animation: showBottomText 0.5s;
-  animation-delay: 1.75s;
+  animation-delay: 1.5s;
   animation-fill-mode: forwards;
   top: 0;
   transform: translate(0, -100%);
-  font-size: 4vmin;
+  font-size: 5vmin;
 }
 
 .animated-title > div.text-bottom div span {
@@ -118,7 +118,14 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    /* background-color: orange; */
+    gap: 10rem;
+    margin-bottom: 4rem;
+  }
+
+  .footerRow {
+    width: 100%;
+    display: flex;
+    justify-content: center;
     gap: 10rem;
   }
 }
@@ -180,6 +187,7 @@
 /* project description */
 .row > div > div{
   font-family: Roboto, Arial, sans-serif;
+  /* font-size: 1vw; */
   display: inline-block;
 }
 
@@ -204,7 +212,7 @@
 }
 
 .footer {
-  margin-top: 3rem;
+  margin-top: 8rem;
 }
 
 .footerRow {
