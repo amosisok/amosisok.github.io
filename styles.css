@@ -271,3 +271,9 @@
   font-weight: 400;
   font-size: medium;
 }
+
+.date {
+  color: black;
+  font-weight: 400;
+  float: right;
+}
