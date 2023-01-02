@@ -82,7 +82,7 @@
   }
   
   .animated-title {
-    width: 31rem;
+    width: 36rem;
   }
 
   .aboutContent {
@@ -90,6 +90,14 @@
     width: 35rem;
     margin-left: 6rem;
     line-height: 2rem;
+  }
+
+  .experience {
+    margin-left: 2rem;
+  }
+
+  .experience_pic {
+      margin-left: 8rem;
   }
 
   .project {
@@ -117,7 +125,13 @@
 }
 
 
+/* Mobile view */
 @media only screen and (max-width: 600px) {
+
+  .animated-title > div.text-bottom div span {
+    margin-right: 13px;
+}
+
   .section {
     margin-left: 5%;
     margin-right: 5%;
@@ -130,6 +144,15 @@
 
   .animated-title {
     width: 15rem;
+  }
+
+  .experience_pic {
+    display: block;
+    max-width: 100%;
+  }
+
+  .experience {
+    max-width: 100%;
   }
 
   .project {
@@ -221,4 +244,24 @@
 
 .copyright {
   font-family: Roboto, Arial, sans-serif;
+}
+
+.experience_pic {
+  margin-top: 2rem;
+}
+
+.experience {
+  display: inline-block;
+  width: 35rem;
+  margin-top: 3rem;
+}
+
+.experience_position {
+  color: #6699CC;
+}
+
+.acquired {
+  display: inline;
+  font-weight: 400;
+  font-size: medium;
 }
