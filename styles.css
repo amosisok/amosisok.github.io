@@ -98,6 +98,8 @@
 
   .experience_pic {
       margin-left: 8rem;
+      max-height: 20rem;
+      max-width: 21rem;
   }
 
   .project {
