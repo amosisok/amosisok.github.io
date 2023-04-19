@@ -31,7 +31,22 @@ experienceLink.addEventListener("click", function() {
         inline: "nearest"
     });
 });
-
 }
+
+const observer = new IntersectionObserver(entries => {
+    // Loop over the entries
+    entries.forEach(entry => {
+      // If the element is visible
+      if (entry.isIntersecting) {
+        // Add the animation class
+        entry.target.classList.add('item-animation');
+      }
+    });
+  });
+  
+  const viewbox = document.querySelectorAll('.experience');
+  viewbox.forEach(item => {
+    observer.observe(item);
+  });
 
 links();

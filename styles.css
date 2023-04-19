@@ -256,10 +256,26 @@
   margin-top: 2rem;
 }
 
-.experience {
+.experience-body {
   display: inline-block;
   width: 40rem;
   margin-top: 3rem;
+}
+
+@keyframes enter-animation {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .item-animation {
+    animation: enter-animation 0.5s 1;
+  }
 }
 
 .experience_position {
