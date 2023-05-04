@@ -64,46 +64,28 @@
   height: 90vh;
   transform: translateX(-50%);
 }
+.section {
+  text-align: center;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
 
 @media only screen and (min-width:1024px) {
 
-  @media only screen and (min-width:1520px) {
-    .section {
-      margin-left: 15%;
-      margin-top: 5rem;
-    }
-
-    .experience_pic {
-    }
-  }
-
-  @media only screen and (max-width:1520px) {
-    .section {
-      margin-left: 9%;
-      margin-top: 5rem;
-    }
-  }
-  
   .animated-title {
     width: 36rem;
   }
 
-  .aboutContent {
-    display: inline-block;
-    width: 35rem;
-    margin-left: 6rem;
-    line-height: 2rem;
-  }
-
   .experience {
-    margin-left: 2rem;
-    /* width: 20rem; */
+    /* display: flex;
+    width: 100%; */
+    margin-left: 15rem;
   }
 
   .experience_pic {
-      margin-left: 8rem;
-      max-height: 20rem;
-      max-width: 21rem;
+    max-height: 20rem;
+    max-width: 21rem;
+    
   }
 
   .project {
@@ -145,20 +127,11 @@
   }
 
   .portrait {
-    width: 21rem;
+    min-width: 21rem;
   }
 
   .animated-title {
     width: 15rem;
-  }
-
-  .experience_pic {
-    display: block;
-    max-width: 100%;
-  }
-
-  .experience {
-    max-width: 100%;
   }
 
   .project {
@@ -177,7 +150,8 @@
   }
 }
 
-.section > h1 {
+
+h1 {
   font-family: Roboto, Arial, sans-serif;
 }
 
@@ -209,8 +183,29 @@
   height: 100vh;
 }
 
+.about {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-bottom: 4rem;
+}
+
+.aboutContent {
+  background-color: lightgray;
+  border: #606060;
+  border-style: solid;
+  border-spacing: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  line-height: 1.5;
+  width: 650px;
+}
+
 .portrait {
-  max-width: 28rem;
+  width: 25%;
+  min-width: 25%;
+  /* margin-left: 7%; */
 }
 
 .project {
@@ -253,11 +248,17 @@
 }
 
 .experience_pic {
-  margin-top: 2rem;
+  /* max-width: 100%; */
+}
+
+.experience {
+  max-width: 100%;
+  display: flex;
+  /* justify-content: center; */
+  gap: 5rem;
 }
 
 .experience-body {
-  display: inline-block;
   width: 40rem;
   margin-top: 3rem;
 }
@@ -274,7 +275,7 @@
 }
 @media (prefers-reduced-motion: no-preference) {
   .item-animation {
-    animation: enter-animation 0.5s 1;
+    animation: enter-animation 1.1s 1;
   }
 }
 
