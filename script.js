@@ -1,36 +1,46 @@
 function links() {
-let aboutLink = document.getElementById("aboutLink");
-let about = document.getElementById("about");
+  let aboutLink = document.getElementById("aboutLink");
+  let about = document.getElementById("about");
 
-let projectsLink = document.getElementById("projectsLink");
-let projects = document.getElementById("projects");
+  let projectsLink = document.getElementById("projectsLink");
+  let projects = document.getElementById("projects");
 
-let experienceLink = document.getElementById("experienceLink");
-let experience = document.getElementById("experience");
+  let experienceLink = document.getElementById("experienceLink");
+  let experience = document.getElementById("experience");
 
-aboutLink.addEventListener("click", function() {
-    about.scrollIntoView({
+  let scrollToTop = document.getElementById("scrollToTop");
+
+  aboutLink.addEventListener("click", function() {
+      about.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest"
+      });
+  });
+
+  projectsLink.addEventListener("click", function() {
+      projects.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest"
+      });
+  });
+
+  experienceLink.addEventListener("click", function() {
+      experience.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest"
+      });
+  });
+
+  scrollToTop.addEventListener("click", function() {
+    aboutLink.scrollIntoView({
         behavior: "smooth",
-        block: "start",
+        block: "end",
         inline: "nearest"
     });
-});
-
-projectsLink.addEventListener("click", function() {
-    projects.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-        inline: "nearest"
-    });
-});
-
-experienceLink.addEventListener("click", function() {
-    experience.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-        inline: "nearest"
-    });
-});
+  });
 }
 
 const observer = new IntersectionObserver(entries => {
@@ -48,5 +58,6 @@ const observer = new IntersectionObserver(entries => {
   viewbox.forEach(item => {
     observer.observe(item);
   });
+  
 
 links();
